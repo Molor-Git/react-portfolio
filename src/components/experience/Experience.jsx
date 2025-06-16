@@ -9,6 +9,46 @@ const Experience = () => {
 			<h2>My Experience</h2>
 
 			<div className="container experience__container">
+				<div className="experience__cybersecurity">
+					<h3>Cybersecurity Analyst </h3>
+					<div className="experience__content">
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Network Security</h4>
+								<small className="text-light">Experienced</small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Penetration Testing</h4>
+								<small className="text-light">Experienced</small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Incident Response</h4>
+								<small className="text-light">Experienced</small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Kali Linux</h4>
+								<small className="text-light">Experienced</small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>SQL</h4>
+								<small className="text-light">Experienced</small>
+							</div>
+						</article>
+					</div>
+				</div>
 				<div className="experience__frontend">
 					<h3>Frontend Development</h3>
 					<div className="experience__content">
@@ -71,7 +111,7 @@ const Experience = () => {
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
-								<h4>MongoDB</h4>
+								<h4>npm</h4>
 								<small className="text-light">Experienced</small>
 							</div>
 						</article>
@@ -105,6 +145,7 @@ const Experience = () => {
 						</article>
 					</div>
 				</div>
+				{/* END OF BACKEND */}
 			</div>
 		</section>
 	);

@@ -1,7 +1,7 @@
 import React from "react";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
-import { BsWhatsapp } from "react-icons/bs";
+// import { BsWhatsapp } from "react-icons/bs";
 import { SlSocialTwitter } from "react-icons/sl";
 import { useRef } from "react";
 import emailjs from 'emailjs-com'
@@ -31,7 +31,7 @@ const Contact = () => {
 					<article className="contact__option">
 						<MdOutlineEmail className="contact__option-icon" />
 						<h4>Email</h4>
-						<h5>dev.molor@gmail.com</h5>
+						{/* <h5>dev.molor@gmail.com</h5> */}
 						<a
 							href="mailto:dev.molor@gmail.com"
 							target="_blank"
@@ -40,7 +40,7 @@ const Contact = () => {
 							Send a message
 						</a>
 					</article>
-					<article className="contact__option">
+					{/* <article className="contact__option">
 						<BsWhatsapp className="contact__option-icon" />
 						<h4>WhatsApp</h4>
 						<h5>+123456789</h5>
@@ -51,11 +51,11 @@ const Contact = () => {
 						>
 							Send a message
 						</a>
-					</article>
+					</article> */}
 					<article className="contact__option">
 						<SlSocialTwitter className="contact__option-icon" />
 						<h4>Twitter</h4>
-						<h5>Molorerdene</h5>
+						{/* <h5>Molorerdene</h5> */}
 						<a
 							href="https://twitter.com/@molor__erdene"
 							target="_blank"
