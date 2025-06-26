@@ -1,6 +1,6 @@
 .about__container {
 	display: grid;
-	grid-template-columns: 30% 50%;
+	grid-template-columns: 40% 50%;
 	gap: 15%;
 }
 

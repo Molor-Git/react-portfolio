@@ -2,7 +2,7 @@ import React from "react";
 import "./about.css";
 import ME from "../../assets/kali-blue-sticker-modified.png";
 import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
+// import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 
 const About = () => {
