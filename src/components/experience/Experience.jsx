@@ -1,6 +1,7 @@
 import React from "react";
 import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
+import BADGE from "../../assets/google-cybersecurity-professional-certificate-v2.png"
 
 const Experience = () => {
 	return (
@@ -15,39 +16,128 @@ const Experience = () => {
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
-								<h4>Network Security</h4>
-								<small className="text-light">Experienced</small>
+								<h4>Authentication</h4>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
-								<h4>Penetration Testing</h4>
-								<small className="text-light">Experienced</small>
+								<h4>Linux</h4>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
-								<h4>Incident Response</h4>
-								<small className="text-light">Experienced</small>
+								<h4>Cybersecurity Assessment</h4>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
-								<h4>Kali Linux</h4>
-								<small className="text-light">Experienced</small>
+								<h4>Information Assurance</h4>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
 								<h4>SQL</h4>
-								<small className="text-light">Experienced</small>
+								<small className="text-light"></small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Information Security</h4>
+								<small className="text-light"></small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Information Systems</h4>
+								<small className="text-light"></small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Intrusion Detection and IDS tools</h4>
+								<small className="text-light"></small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Network Analyzer (sniffing) tools</h4>
+								<small className="text-light"></small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Network Security</h4>
+								<small className="text-light"></small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>NIST Cybersecurity Framework</h4>
+								<small className="text-light"></small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Python</h4>
+								<small className="text-light"></small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Risk Assessment</h4>
+								<small className="text-light"></small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Risk Management Framework</h4>
+								<small className="text-light"></small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Threat Analysis</h4>
+								<small className="text-light"></small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Vulnerability Assessment</h4>
+								<small className="text-light"></small>
+							</div>
+						</article>
+						<article className="experience__details">
+							<BsPatchCheckFill className="experience__details-icon" />
+							<div>
+								<h4>Security Information and Event Management (SIEM) tools</h4>
+								<small className="text-light"></small>
 							</div>
 						</article>
 					</div>
+					<div className="badge">
+						<div>
+							<img src={BADGE} alt="Badge-Icon"/>
+						</div>
+					</div>	
 				</div>
 				<div className="experience__frontend">
 					<h3>Frontend Development</h3>
@@ -55,43 +145,36 @@ const Experience = () => {
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
-								<h4>HTML</h4>
-								<small className="text-light">Experienced</small>
-							</div>
-						</article>
-						<article className="experience__details">
-							<BsPatchCheckFill className="experience__details-icon" />
-							<div>
-								<h4>CSS</h4>
-								<small className="text-light">Experienced</small>
+								<h4>HTML/CSS</h4>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
 								<h4>Javascript</h4>
-								<small className="text-light">Experienced</small>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
 								<h4>Bootstrap</h4>
-								<small className="text-light">Experienced</small>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
 								<h4>Tailwind</h4>
-								<small className="text-light">Experienced</small>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
 								<h4>React</h4>
-								<small className="text-light">Experienced</small>
+								<small className="text-light"></small>
 							</div>
 						</article>
 					</div>
@@ -105,42 +188,42 @@ const Experience = () => {
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
 								<h4>Node JS</h4>
-								<small className="text-light">Experienced</small>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
 								<h4>npm</h4>
-								<small className="text-light">Experienced</small>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
 								<h4>MySQL</h4>
-								<small className="text-light">Experienced</small>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
 								<h4>Python</h4>
-								<small className="text-light">Experienced</small>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
 								<h4>socket.io</h4>
-								<small className="text-light">Intermediate</small>
+								<small className="text-light"></small>
 							</div>
 						</article>
 						<article className="experience__details">
 							<BsPatchCheckFill className="experience__details-icon" />
 							<div>
-								<h4>HTML</h4>
-								<small className="text-light">Experienced</small>
+								<h4>Flask</h4>
+								<small className="text-light"></small>
 							</div>
 						</article>
 					</div>

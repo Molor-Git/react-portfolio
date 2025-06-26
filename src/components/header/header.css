@@ -21,6 +21,19 @@ header {
 
 /* ================ HEADER SOCIALS ================= */
 
+/* added permalinks ul from footer.jsx  */
+/* .permalinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+    color: white;
+} */
+/* added permalinks ul from footer.jsx  */
+
 .header__socials {
     display: flex;
     flex-direction: column;
