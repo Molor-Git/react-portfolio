@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.92741b35.css",
+    "main.js": "/react-portfolio/static/js/main.d5a91736.js",
+    "static/media/maxtocat.gif": "/react-portfolio/static/media/maxtocat.c66dff5f5f935f1a2f1b.gif",
+    "static/media/img2.jpeg": "/react-portfolio/static/media/img2.992839e2fc895c742186.jpeg",
+    "static/media/img1.jpeg": "/react-portfolio/static/media/img1.8fdc22e09226ed808d77.jpeg",
+    "static/media/img3.jpeg": "/react-portfolio/static/media/img3.8fdc22e09226ed808d77.jpeg",
+    "static/media/img5.png": "/react-portfolio/static/media/img5.e68bbb9e511654bd8c7d.png",
+    "static/media/img6.jpeg": "/react-portfolio/static/media/img6.6bab9829654f1356a2b4.jpeg",
+    "static/media/img4.jpeg": "/react-portfolio/static/media/img4.7c2570732b033f8154b8.jpeg",
+    "static/media/cv.pdf": "/react-portfolio/static/media/cv.46cd3118bfcb523fb23c.pdf",
+    "static/media/Fintechtocat.png": "/react-portfolio/static/media/Fintechtocat.b1076a0ae29a3e52df71.png",
+    "static/media/skatetocat.png": "/react-portfolio/static/media/skatetocat.be3b3c0691623b6049aa.png",
+    "static/media/filmtocat.png": "/react-portfolio/static/media/filmtocat.3e8f4a6dcbe9e2a175ad.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.92741b35.css.map": "/react-portfolio/static/css/main.92741b35.css.map",
+    "main.d5a91736.js.map": "/react-portfolio/static/js/main.d5a91736.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92741b35.css",
+    "static/js/main.d5a91736.js"
+  ]
+}
