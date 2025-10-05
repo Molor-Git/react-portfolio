@@ -1,8 +1,8 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/maxtocat.gif";
+import ME from "../../assets/kali-blue-sticker-modified.png";
 import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
+// import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 
 const About = () => {
@@ -15,6 +15,7 @@ const About = () => {
 				<div className="about__me">
 					<div className="about__me-image">
 						<img src={ME} alt="About_Image" />
+						{/* <img src={GOOGLE-BADGE} alt="About_Image" /> */}
 					</div>
 				</div>
 
@@ -26,11 +27,11 @@ const About = () => {
 							<small>1+ Years</small>
 						</article>
 
-						<article className="about__card">
+						{/* <article className="about__card">
 							<FiUsers className="about__icon" />
 							<h5>Clients</h5>
 							<small>100+ Worldwide</small>
-						</article>
+						</article> */}
 
 						<article className="about__card">
 							<VscFolderLibrary className="about__icon" />
@@ -39,12 +40,10 @@ const About = () => {
 						</article>
 					</div>
 
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Reiciendis, voluptatum neque vitae qui quis
-						voluptas rerum autem molestias soluta odio laboriosam,
-						aperiam et perferendis placeat nostrum assumenda
-						dignissimos culpa ex.
+					<p> 
+						I protect systems by day and build them by night. With a blend of **Google Cybersecurity training** and 
+						**full-stack development skills** (thanks to Coding Dojo), I bridge the gap between security and software engineering. 
+						My mission: design secure, resilient systems that stand up to modern threats.  
 					</p>
 
 					<a href="#contact" className="btn btn-primary">
