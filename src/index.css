@@ -1,0 +1,14 @@
+:root{
+  --color-bg: #0a192f;
+  --color-text: #e6f1ff;
+  --color-bg-variant: #112240;
+}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+a{ color:inherit; text-decoration:none }
+.container{ width:90%; max-width:1000px; margin:0 auto; }
