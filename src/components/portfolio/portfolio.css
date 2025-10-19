@@ -1,7 +1,13 @@
 .portfolio__container {
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2.5rem;
+  justify-items: center;
+  align-items: start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .portfolio__item {
@@ -10,6 +16,12 @@
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .portfolio__item:hover {
@@ -20,32 +32,170 @@
 .portfolio__item-image {
   border-radius: 1.5rem;
   overflow: hidden;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio__item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .portfolio__item h3 {
   margin: 1.2rem 0.2rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
 }
 
 .portfolio__item-cta {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  justify-content: center;
+  margin-top: auto;
 }
 
-/* =================== MEDIA QUERIES (MEDIUM DEVICES)======================*/
+/* =================== MEDIA QUERIES (EXTRA LARGE DEVICES - 4K)======================*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1920px) {
     .portfolio__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
+        max-width: 1600px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 3rem;
+        padding: 0 2rem;
     }
 }
 
-/* =================== MEDIA QUERIES (SMALL DEVICES)======================*/
+/* =================== MEDIA QUERIES (LARGE DEVICES)======================*/
+
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+    .portfolio__container {
+        max-width: 1200px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5rem;
+    }
+}
+
+/* =================== MEDIA QUERIES (MEDIUM DEVICES - TABLETS)======================*/
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .portfolio__container {
+        max-width: 900px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        padding: 0 1.5rem;
+    }
+    
+    .portfolio__item {
+        max-width: 400px;
+    }
+    
+    .portfolio__item-image {
+        height: 180px;
+    }
+}
+
+/* =================== MEDIA QUERIES (SMALL TABLETS)======================*/
+
+@media screen and (max-width: 768px) and (min-width: 601px) {
+    .portfolio__container {
+        max-width: 700px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .portfolio__item {
+        max-width: 350px;
+    }
+    
+    .portfolio__item-image {
+        height: 160px;
+    }
+}
+
+/* =================== MEDIA QUERIES (MOBILE DEVICES)======================*/
 
 @media screen and (max-width: 600px) {
     .portfolio__container {
+        max-width: 100%;
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .portfolio__item {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .portfolio__item-image {
+        height: 200px;
+    }
+    
+    .portfolio__item h3 {
+        font-size: 1.1rem;
+        margin: 1rem 0.2rem;
+    }
+    
+    .portfolio__item-cta {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+}
+
+/* =================== MEDIA QUERIES (EXTRA SMALL DEVICES)======================*/
+
+@media screen and (max-width: 480px) {
+    .portfolio__container {
+        padding: 0 0.5rem;
         gap: 1rem;
+    }
+    
+    .portfolio__item {
+        padding: 1rem;
+    }
+    
+    .portfolio__item-image {
+        height: 180px;
+    }
+    
+    .portfolio__item h3 {
+        font-size: 1rem;
+        margin: 0.8rem 0.2rem;
+        min-height: 2.5rem;
+    }
+    
+    .portfolio__item-cta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .portfolio__item-cta .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* =================== MEDIA QUERIES (VERY SMALL DEVICES)======================*/
+
+@media screen and (max-width: 360px) {
+    .portfolio__container {
+        padding: 0 0.25rem;
+    }
+    
+    .portfolio__item {
+        padding: 0.8rem;
+    }
+    
+    .portfolio__item-image {
+        height: 150px;
     }
 }

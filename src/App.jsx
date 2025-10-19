@@ -1,30 +1,24 @@
 import React, {Component} from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
-import About from './components/about/About'
-import Experience from './components/experience/Experience'
-import Portfolio from './components/portfolio/Portfolio'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
+import ScrollToTop from './components/ScrollToTop'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import ExperiencePage from './pages/ExperiencePage'
+import PortfolioPage from './pages/PortfolioPage'
+import ContactPage from './pages/ContactPage'
 import SkillPage from './pages/SkillPage'
 
 class App extends Component {
     render() { 
         return (
             <BrowserRouter>
+                <ScrollToTop />
                 <Routes>
-                    <Route path="/" element={
-                        <>
-                            <Header />
-                            <Nav />
-                            <About />
-                            <Experience />
-                            <Portfolio />
-                            <Contact />
-                            <Footer />
-                        </>
-                    } />
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/about" element={<AboutPage />} />
+                    <Route path="/experience" element={<ExperiencePage />} />
+                    <Route path="/portfolio" element={<PortfolioPage />} />
+                    <Route path="/contact" element={<ContactPage />} />
                     <Route path="/skills/:slug" element={<SkillPage />} />
                 </Routes>
             </BrowserRouter>

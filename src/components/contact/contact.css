@@ -1,0 +1,265 @@
+.contact__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/* Remove unused contact options styles */
+.contact__options {
+    display: none;
+}
+
+.contact__option {
+    display: none;
+}
+
+.contact__option:hover {
+    display: none;
+}
+
+.contact__option-icon {
+    display: none;
+}
+
+.contact__option a {
+    display: none;
+}
+
+/* =================== FORM =================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--color-bg-variant);
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+form:hover {
+    border-color: var(--color-primary-variant);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    border-radius: 1rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: var(--color-white);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.1);
+    transform: translateY(-2px);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--color-light);
+    font-size: 0.95rem;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    margin-top: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    align-self: center;
+    min-width: 200px;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* =================== MESSAGE STATES =================== */
+.message {
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: 500;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message.success {
+    background: rgba(0, 255, 0, 0.1);
+    color: #00ff88;
+    border: 1px solid rgba(0, 255, 0, 0.3);
+}
+
+.message.error {
+    background: rgba(255, 0, 0, 0.1);
+    color: #ff6b6b;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+/* =================== MEDIA QUERIES (EXTRA LARGE)======================*/
+@media screen and (min-width: 1200px) {
+    .contact__container {
+        padding: 0 3rem;
+    }
+    
+    form {
+        max-width: 600px;
+        padding: 3rem;
+    }
+}
+
+/* =================== MEDIA QUERIES (LARGE DEVICES)======================*/
+@media screen and (max-width: 1024px) {
+    .contact__container {
+        padding: 0 2rem;
+    }
+    
+    form {
+        max-width: 500px;
+        padding: 2rem 1.5rem;
+    }
+    
+    input,
+    textarea {
+        padding: 1rem 1.2rem;
+    }
+}
+
+/* =================== MEDIA QUERIES (MEDIUM DEVICES - TABLETS)======================*/
+@media screen and (max-width: 768px) {
+    .contact__container {
+        padding: 0 1.5rem;
+    }
+    
+    form {
+        max-width: 100%;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+    }
+    
+    input,
+    textarea {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+    
+    button[type="submit"] {
+        min-width: 180px;
+        padding: 0.9rem 1.5rem;
+    }
+}
+
+/* =================== MEDIA QUERIES (SMALL DEVICES - MOBILE)======================*/
+@media screen and (max-width: 600px) {
+    .contact__container {
+        padding: 0 1rem;
+    }
+    
+    form {
+        padding: 1.2rem;
+        gap: 1.2rem;
+        border-radius: 1rem;
+    }
+    
+    input,
+    textarea {
+        padding: 0.9rem 1rem;
+        font-size: 0.9rem;
+        border-radius: 0.8rem;
+    }
+    
+    textarea {
+        min-height: 100px;
+    }
+    
+    button[type="submit"] {
+        min-width: 160px;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* =================== MEDIA QUERIES (EXTRA SMALL - SMALL MOBILE)======================*/
+@media screen and (max-width: 480px) {
+    .contact__container {
+        padding: 0 0.8rem;
+    }
+    
+    form {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    input,
+    textarea {
+        padding: 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    button[type="submit"] {
+        width: 100%;
+        min-width: auto;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .message {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* =================== MEDIA QUERIES (VERY SMALL DEVICES)======================*/
+@media screen and (max-width: 360px) {
+    .contact__container {
+        padding: 0 0.5rem;
+    }
+    
+    form {
+        padding: 0.8rem;
+        border-radius: 0.8rem;
+    }
+    
+    input,
+    textarea {
+        padding: 0.7rem;
+        font-size: 0.8rem;
+        border-radius: 0.6rem;
+    }
+    
+    textarea {
+        min-height: 80px;
+    }
+}

@@ -1,0 +1,102 @@
+nav {
+    background: rgba(0, 0, 0, 0.4);
+    width: max-content;
+    display: flex;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    gap: 1rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    background: transparent;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.3rem;
+    font-weight: 700;
+    transition: var(--transition);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    min-height: 50px;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover {
+    background: rgba(100, 255, 218, 0.15);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(100, 255, 218, 0.2);
+}
+
+nav a.active {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    font-weight: 800;
+    box-shadow: 0 4px 15px rgba(100, 255, 218, 0.4);
+}
+
+/* =================== MEDIA QUERIES (MEDIUM DEVICES)======================*/
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 0.8rem 1.5rem;
+        gap: 0.8rem;
+    }
+    
+    nav a {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.2rem;
+        min-width: 46px;
+        min-height: 46px;
+    }
+}
+
+/* =================== MEDIA QUERIES (SMALL DEVICES)======================*/
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 0.6rem 1rem;
+        gap: 0.6rem;
+    }
+    
+    nav a {
+        padding: 0.7rem 1rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        min-width: 42px;
+        min-height: 42px;
+        letter-spacing: 0.3px;
+    }
+    
+    nav a.active {
+        font-weight: 700;
+    }
+}
+
+/* =================== MEDIA QUERIES (EXTRA SMALL DEVICES)======================*/
+
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 0.5rem 0.8rem;
+        gap: 0.4rem;
+    }
+    
+    nav a {
+        padding: 0.6rem 0.8rem;
+        font-size: 1rem;
+        font-weight: 600;
+        min-width: 38px;
+        min-height: 38px;
+    }
+}

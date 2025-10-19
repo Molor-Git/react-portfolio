@@ -1,7 +1,7 @@
 .about__container {
-	display: grid;
-	grid-template-columns: 40% 50%;
-	gap: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .about__me {
@@ -94,54 +94,71 @@
     color: var(--color-light);
 }
 
+.about__content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
 .about__content p {
-    margin: 2rem 0 2.6rem;
+    margin: 0 0 3rem;
     color: var(--color-light);
+    line-height: 1.8;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES)======================*/
 
 @media screen and (max-width: 1024px) {
     .about__container {
-        grid-template-columns: 1fr;
-        gap: 0;
+        flex-direction: column;
+        padding: 0 2rem;
     }
 
-    .about__me {
-        width: 50%;
-        margin: 2rem auto 4rem;
+    .about__content {
+        max-width: 700px;
+        padding: 1.5rem;
     }
 
     .about__content p {
-        margin: 1rem 0 1.5rem;
+        margin: 0 0 2.5rem;
+        font-size: 1.1rem;
+        line-height: 1.7;
     }
 }
 
 /* =================== MEDIA QUERIES (SMALL DEVICES)======================*/
 
 @media screen and (max-width: 600px) {
-    .about__me {
-        width: 65%;
-        margin: 0 auto 3rem;
-    }
-    .about__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+    .about__container {
+        padding: 0 1rem;
     }
 
     .about__content {
-        text-align: center;
+        max-width: 100%;
+        padding: 1rem;
     }
 
     .about__content p {
-        margin: 1.5rem 0;
+        margin: 0 0 2rem;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+/* =================== MEDIA QUERIES (EXTRA SMALL DEVICES)======================*/
+
+@media screen and (max-width: 480px) {
+    .about__content {
+        padding: 0.8rem;
     }
 
-    .about__me-grid {
-        flex-direction: row;
-        gap: 0.6rem;
-    }
-    .about__me-image--small {
-        width: 120px;
+    .about__content p {
+        font-size: 0.95rem;
+        margin: 0 0 1.8rem;
     }
 }

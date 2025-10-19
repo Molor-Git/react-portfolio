@@ -31,11 +31,34 @@
 .experience__details {
     display: flex;
     gap: 1rem;
+    align-items: flex-start;
 }
 
 .experience__details-icon {
-    margin-top: 6px;
+    margin-top: 2px;
     color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.experience__details div {
+    flex: 1;
+}
+
+.experience__details h4 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.skill-link {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.skill-link:hover {
+    color: var(--color-primary);
+    transform: translateX(4px);
 }
 
 .badge {
@@ -68,14 +91,19 @@
 }
 
 .experience__badge-img {
-  width: 120px;
-  max-width: 28vw;
+  width: 180px;
+  max-width: 35vw;
   height: auto;
   object-fit: contain;
   border-radius: 0.5rem;
-  background: var(--color-bg-variant);
-  padding: 0.4rem;
-  box-shadow: 0 6px 18px rgba(2,12,27,0.15);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  transition: var(--transition);
+}
+
+.experience__badge-img:hover {
+  transform: scale(1.05);
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES)======================*/
@@ -116,5 +144,22 @@
     justify-content: center;
     gap: 0.8rem;
   }
-  .experience__badge-img { width: 100px; }
+  .experience__badge-img { 
+    width: 150px; 
+    max-width: 40vw;
+  }
+}
+
+/* =================== MEDIA QUERIES (SMALL MOBILE)======================*/
+@media screen and (max-width: 480px) {
+  .experience__badges {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .experience__badge-img { 
+    width: 160px; 
+    max-width: 80vw;
+  }
 }
