@@ -11,7 +11,7 @@ import SkillPage from './pages/SkillPage'
 class App extends Component {
     render() { 
         return (
-            <BrowserRouter>
+            <BrowserRouter basename="/react-portfolio">
                 <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
