@@ -51,6 +51,33 @@
     place-items: center;
 }
 
+.experience__badges {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.25rem;
+  gap: 1rem;
+}
+
+.experience__badge {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience__badge-img {
+  width: 120px;
+  max-width: 28vw;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  background: var(--color-bg-variant);
+  padding: 0.4rem;
+  box-shadow: 0 6px 18px rgba(2,12,27,0.15);
+}
+
 /* =================== MEDIA QUERIES (MEDIUM DEVICES)======================*/
 
 @media screen and (max-width: 1024px) {
@@ -83,6 +110,7 @@
     }
 }
 
+<<<<<<< HEAD
 /* highlight when navigating back to a specific skill */
 .highlight-skill {
     box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
@@ -96,4 +124,13 @@
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     transform: translateY(-4px);
     transition: all 0.25s ease;
+=======
+/* responsive */
+@media screen and (max-width: 768px) {
+  .experience__badges {
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  .experience__badge-img { width: 100px; }
+>>>>>>> 746ed310d015ed966efd93e63c50c046623bc0c8
 }

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "homepage": "http://molor-git.github.io/react-portfolio",
+=======
+  "homepage": "https://Molor-Git.github.io/react-portfolio",
+>>>>>>> 746ed310d015ed966efd93e63c50c046623bc0c8
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +17,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+<<<<<<< HEAD
     "react-router-dom": "^7.9.4",
+=======
+    "react-router-dom": "^6.30.1",
+>>>>>>> 746ed310d015ed966efd93e63c50c046623bc0c8
     "react-scripts": "^5.0.1",
     "swiper": "^8.4.5",
     "web-vitals": "^2.1.4"

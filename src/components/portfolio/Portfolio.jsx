@@ -1,36 +1,34 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from '../../assets/Fintechtocat.png'
-import IMG2 from '../../assets/Fintechtocat.png'
-import IMG3 from '../../assets/Fintechtocat.png'
-import IMG4 from '../../assets/Fintechtocat.png'
-import IMG5 from '../../assets/Fintechtocat.png'
-import IMG6 from '../../assets/Fintechtocat.png'
+import IMG1 from '../../assets/step1.png'
+import IMG2 from '../../assets/step2.png'
+import IMG3 from '../../assets/step3.png'
+import IMG4 from '../../assets/step4.png'
+import IMG5 from '../../assets/step5.png'
+import IMG6 from '../../assets/step6.png'
 
-
-// DO NOT USE COPYRIGHTED IMAGES IN PRODUCTION
 
 const data = [
 	{
 		id: 1,
 		image: IMG1,
-		title: "Crypto Currency Dashboard & Financial Visualization",
-		github: "https://github.com",
-		// demo: "https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization/attachments/11711155?mode=media",
+		title: "Open file with python",
+		// github: "https://github.com",
+		demo: "https://",
 	},
 	{
 		id: 2,
 		image: IMG2,
 		title: "Charts templates & infographics in Figma",
 		github: "https://github.com",
-		// demo: "https://dribbble.com/shots/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma/attachments/11605458?mode=media",
+		// demo: "https://",
 	},
 	{
 		id: 3,
 		image: IMG3,
 		title: "Figma dashboard UI kit for data design web apps",
 		github: "https://github.com",
-		// demo: "https://dribbble.com/shots/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps/attachments/12402865?mode=media",
+		// demo: "https://",
 	},
 	{
 		id: 4,
