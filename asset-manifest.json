@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.50bfb8b9.css",
-    "main.js": "/react-portfolio/static/js/main.34665c79.js",
-    "static/media/kali-blue-sticker-modified.png": "/react-portfolio/static/media/kali-blue-sticker-modified.e04f398bd2e3f231215f.png",
-    "static/media/anime.png": "/react-portfolio/static/media/anime.2ec9dae5995e4e08b3b2.png",
-    "static/media/resume.pdf": "/react-portfolio/static/media/resume.ebb655444140764d066c.pdf",
-    "static/media/Fintechtocat.png": "/react-portfolio/static/media/Fintechtocat.b1076a0ae29a3e52df71.png",
+    "main.css": "/react-portfolio/static/css/main.cfd31245.css",
+    "main.js": "/react-portfolio/static/js/main.0262cfd5.js",
+    "static/media/CodingDojo.jpg": "/react-portfolio/static/media/CodingDojo.e272187bd66c7bcafbd4.jpg",
     "static/media/google-cybersecurity-professional-certificate-v2.png": "/react-portfolio/static/media/google-cybersecurity-professional-certificate-v2.5cdffb4b6bb36ecdadf6.png",
+    "static/media/step6.png": "/react-portfolio/static/media/step6.ed3fd4ec60872b2c1cd6.png",
+    "static/media/step4.png": "/react-portfolio/static/media/step4.50535a0ef08bb2937e8d.png",
+    "static/media/step5.png": "/react-portfolio/static/media/step5.c4386aefe15197afbff5.png",
+    "static/media/step3.png": "/react-portfolio/static/media/step3.e38aa7e68530a0e95812.png",
+    "static/media/step1.png": "/react-portfolio/static/media/step1.3a2a8797c1825d8d2e63.png",
+    "static/media/step2.png": "/react-portfolio/static/media/step2.04ba1d44f166e89dbee7.png",
     "index.html": "/react-portfolio/index.html",
-    "main.50bfb8b9.css.map": "/react-portfolio/static/css/main.50bfb8b9.css.map",
-    "main.34665c79.js.map": "/react-portfolio/static/js/main.34665c79.js.map"
+    "main.cfd31245.css.map": "/react-portfolio/static/css/main.cfd31245.css.map",
+    "main.0262cfd5.js.map": "/react-portfolio/static/js/main.0262cfd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.50bfb8b9.css",
-    "static/js/main.34665c79.js"
+    "static/css/main.cfd31245.css",
+    "static/js/main.0262cfd5.js"
   ]
 }
