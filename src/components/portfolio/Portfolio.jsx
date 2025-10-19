@@ -1,21 +1,19 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from '../../assets/Fintechtocat.png'
-import IMG2 from '../../assets/Fintechtocat.png'
-import IMG3 from '../../assets/Fintechtocat.png'
-import IMG4 from '../../assets/Fintechtocat.png'
-import IMG5 from '../../assets/Fintechtocat.png'
-import IMG6 from '../../assets/Fintechtocat.png'
+import IMG1 from '../../assets/step1.png'
+import IMG2 from '../../assets/step2.png'
+import IMG3 from '../../assets/step3.png'
+import IMG4 from '../../assets/step4.png'
+import IMG5 from '../../assets/step5.png'
+import IMG6 from '../../assets/step6.png'
 
-
-// DO NOT USE COPYRIGHTED IMAGES IN PRODUCTION
 
 const data = [
 	{
 		id: 1,
 		image: IMG1,
-		title: "a",
-		github: "https://github.com",
+		title: "Open file with python",
+		// github: "https://github.com",
 		demo: "https://",
 	},
 	{
