@@ -39,14 +39,14 @@
 }
 
 .badge {
-    width: 100%;
+    width: 50%;
 	border-radius: 2rem;
-	/* background: linear-gradient(
+	background: linear-gradient(
 		45deg,
 		transparent,
 		var(--color-primary),
 		transparent
-	); */
+	);
     display: grid;
     place-items: center;
 }
@@ -81,4 +81,19 @@
         width: 100%;
         padding: 2rem 1rem;
     }
+}
+
+/* highlight when navigating back to a specific skill */
+.highlight-skill {
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+/* Focused section style when returning from a skill page */
+.focused-section {
+    background: var(--color-bg);
+    border-color: var(--color-primary-variant);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    transition: all 0.25s ease;
 }
