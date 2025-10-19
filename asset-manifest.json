@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.cfd31245.css",
-    "main.js": "/react-portfolio/static/js/main.0262cfd5.js",
+    "main.js": "/react-portfolio/static/js/main.d0711731.js",
     "static/media/CodingDojo.jpg": "/react-portfolio/static/media/CodingDojo.e272187bd66c7bcafbd4.jpg",
     "static/media/google-cybersecurity-professional-certificate-v2.png": "/react-portfolio/static/media/google-cybersecurity-professional-certificate-v2.5cdffb4b6bb36ecdadf6.png",
     "static/media/step6.png": "/react-portfolio/static/media/step6.ed3fd4ec60872b2c1cd6.png",
@@ -12,10 +12,10 @@
     "static/media/step2.png": "/react-portfolio/static/media/step2.04ba1d44f166e89dbee7.png",
     "index.html": "/react-portfolio/index.html",
     "main.cfd31245.css.map": "/react-portfolio/static/css/main.cfd31245.css.map",
-    "main.0262cfd5.js.map": "/react-portfolio/static/js/main.0262cfd5.js.map"
+    "main.d0711731.js.map": "/react-portfolio/static/js/main.d0711731.js.map"
   },
   "entrypoints": [
     "static/css/main.cfd31245.css",
-    "static/js/main.0262cfd5.js"
+    "static/js/main.d0711731.js"
   ]
 }
