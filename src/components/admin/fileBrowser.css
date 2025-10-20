@@ -1,0 +1,353 @@
+/* =================== FILE BROWSER STYLES ======================*/
+
+.file-browser {
+  margin: 1rem 0;
+}
+
+.file-drop-zone {
+  border: 2px dashed var(--color-primary-variant);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+  background: var(--color-bg-variant);
+  cursor: pointer;
+  position: relative;
+}
+
+.file-drop-zone:hover,
+.file-drop-zone.drag-active {
+  border-color: var(--color-primary);
+  background: rgba(var(--color-primary-rgb), 0.05);
+}
+
+.file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-input-label {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.drop-zone-content {
+  pointer-events: none;
+}
+
+.drop-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.drop-text {
+  font-size: 1.1rem;
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+}
+
+.browse-text {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.drop-hint {
+  font-size: 0.85rem;
+  color: var(--color-light);
+  margin: 0;
+}
+
+/* =================== SELECTED FILES ======================*/
+
+.selected-files {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--color-bg-variant);
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-primary-variant);
+}
+
+.selected-files h4 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: var(--color-bg);
+  border-radius: 0.4rem;
+  border: 1px solid var(--color-primary-variant);
+  transition: var(--transition);
+}
+
+.file-item:hover {
+  border-color: var(--color-primary);
+}
+
+.file-preview {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  background: var(--color-bg-variant);
+  flex-shrink: 0;
+}
+
+.file-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.file-icon {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.file-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.file-name {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-size,
+.file-type {
+  color: var(--color-light);
+  font-size: 0.75rem;
+}
+
+.remove-file-btn {
+  background: #ff5757;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.remove-file-btn:hover {
+  background: #ff3333;
+  transform: scale(1.1);
+}
+
+/* =================== FILE BROWSER ACTIONS ======================*/
+
+.file-browser-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+}
+
+.clear-files-btn {
+  background: transparent;
+  color: var(--color-light);
+  border: 1px solid var(--color-primary-variant);
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.85rem;
+}
+
+.clear-files-btn:hover:not(:disabled) {
+  background: var(--color-primary-variant);
+  color: var(--color-white);
+}
+
+.clear-files-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.file-count {
+  color: var(--color-light);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* =================== LIGHT MODE OVERRIDES ======================*/
+
+[data-theme="light"] .file-drop-zone {
+  background: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+[data-theme="light"] .file-drop-zone:hover,
+[data-theme="light"] .file-drop-zone.drag-active {
+  background: rgba(var(--color-primary-rgb), 0.05);
+}
+
+[data-theme="light"] .drop-text {
+  color: var(--color-dark);
+}
+
+[data-theme="light"] .drop-hint {
+  color: var(--color-dark-variant);
+}
+
+[data-theme="light"] .selected-files {
+  background: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+[data-theme="light"] .file-item {
+  background: var(--color-white);
+  border-color: var(--color-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .file-preview {
+  background: var(--color-white);
+}
+
+[data-theme="light"] .file-name {
+  color: var(--color-dark);
+}
+
+[data-theme="light"] .file-size,
+[data-theme="light"] .file-type {
+  color: var(--color-dark-variant);
+}
+
+[data-theme="light"] .clear-files-btn {
+  color: var(--color-dark);
+  border-color: var(--color-primary);
+}
+
+[data-theme="light"] .clear-files-btn:hover:not(:disabled) {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+[data-theme="light"] .file-count {
+  color: var(--color-dark-variant);
+}
+
+/* =================== MOBILE RESPONSIVE ======================*/
+
+@media screen and (max-width: 768px) {
+  .file-drop-zone {
+    padding: 1.5rem 1rem;
+  }
+  
+  .drop-icon {
+    font-size: 2.5rem;
+  }
+  
+  .drop-text {
+    font-size: 1rem;
+  }
+  
+  .file-item {
+    padding: 0.5rem;
+    gap: 0.75rem;
+  }
+  
+  .file-preview {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .file-info {
+    gap: 0.1rem;
+  }
+  
+  .file-name {
+    font-size: 0.85rem;
+  }
+  
+  .file-size,
+  .file-type {
+    font-size: 0.7rem;
+  }
+  
+  .file-browser-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+  
+  .clear-files-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .file-count {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .file-drop-zone {
+    padding: 1rem 0.5rem;
+  }
+  
+  .drop-icon {
+    font-size: 2rem;
+  }
+  
+  .drop-text {
+    font-size: 0.9rem;
+  }
+  
+  .drop-hint {
+    font-size: 0.8rem;
+  }
+  
+  .file-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .file-info {
+    align-items: center;
+  }
+  
+  .remove-file-btn {
+    align-self: center;
+  }
+}

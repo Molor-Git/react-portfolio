@@ -75,6 +75,35 @@ textarea::placeholder {
     font-size: 0.95rem;
 }
 
+/* Light Mode Contact Form Improvements */
+[data-theme="light"] form {
+    background: var(--color-bg-variant);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] form:hover {
+    border-color: rgba(30, 64, 175, 0.3);
+}
+
+[data-theme="light"] input,
+[data-theme="light"] textarea {
+    border: 2px solid rgba(30, 64, 175, 0.5);
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="light"] input:focus,
+[data-theme="light"] textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+[data-theme="light"] input::placeholder,
+[data-theme="light"] textarea::placeholder {
+    color: rgba(30, 41, 59, 0.6);
+}
+
 textarea {
     min-height: 120px;
     resize: vertical;

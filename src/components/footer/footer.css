@@ -58,3 +58,27 @@
         margin-bottom: 2.6rem;
     }
 }
+
+/* =================== LIGHT MODE STYLES ======================*/
+
+[data-theme="light"] .footer {
+    background: var(--color-primary);
+    border-top: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+[data-theme="light"] .footer a,
+[data-theme="light"] .footer__copyright {
+    color: var(--color-white);
+}
+
+[data-theme="light"] .footer__socials a {
+    background: var(--color-white);
+    color: var(--color-primary);
+    border: 1px solid transparent;
+}
+
+[data-theme="light"] .footer__socials a:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}

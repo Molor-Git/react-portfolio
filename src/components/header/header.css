@@ -69,6 +69,18 @@ header {
     header {
         height: 68vh;
     }
+    
+    .me {
+        width: 18rem;
+        height: 26rem;
+        left: calc(50% - 9rem);
+        margin-top: 3rem;
+    }
+    
+    .cta {
+        margin-top: 2rem;
+        gap: 1rem;
+    }
 }
 
 /* =================== MEDIA QUERIES (SMALL DEVICES)======================*/
@@ -76,10 +88,109 @@ header {
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
+        padding-top: 5rem;
     }
 
     .header__socials,
     .scroll__down {
         display: none;
     }
+    
+    .me {
+        width: 16rem;
+        height: 22rem;
+        left: calc(50% - 8rem);
+        margin-top: 2rem;
+        padding: 3rem 1rem 1rem 1rem;
+    }
+    
+    .cta {
+        margin-top: 1.5rem;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .header__container h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .header__container h5 {
+        font-size: 0.9rem;
+    }
+}
+
+/* =================== MEDIA QUERIES (EXTRA SMALL DEVICES)======================*/
+
+@media screen and (max-width: 480px) {
+    header {
+        padding-top: 4rem;
+    }
+    
+    .me {
+        width: 14rem;
+        height: 20rem;
+        left: calc(50% - 7rem);
+        margin-top: 1.5rem;
+        padding: 2.5rem 0.8rem 0.8rem 0.8rem;
+    }
+    
+    .cta {
+        margin-top: 1.2rem;
+        gap: 0.6rem;
+    }
+    
+    .cta .btn {
+        padding: 0.7rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .header__container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .header__container h5 {
+        font-size: 0.85rem;
+        margin-bottom: 0.2rem;
+    }
+}
+
+/* =================== MEDIA QUERIES (VERY SMALL DEVICES)======================*/
+
+@media screen and (max-width: 360px) {
+    .me {
+        width: 12rem;
+        height: 18rem;
+        left: calc(50% - 6rem);
+        margin-top: 1rem;
+        padding: 2rem 0.6rem 0.6rem 0.6rem;
+    }
+    
+    .header__container h1 {
+        font-size: 1.6rem;
+    }
+    
+    .cta .btn {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* =================== LIGHT MODE STYLES ======================*/
+
+[data-theme="light"] .header__container h1,
+[data-theme="light"] .header__container h5 {
+    color: var(--color-text) !important;
+}
+
+[data-theme="light"] .me {
+    background: var(--color-white);
+    border: 2px solid var(--color-primary);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .header__socials::after {
+    background: var(--color-primary);
 }

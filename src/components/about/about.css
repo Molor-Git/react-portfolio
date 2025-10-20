@@ -129,6 +129,15 @@
         font-size: 1.1rem;
         line-height: 1.7;
     }
+    
+    .about__cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+    
+    .about__card {
+        padding: 1.5rem;
+    }
 }
 
 /* =================== MEDIA QUERIES (SMALL DEVICES)======================*/
@@ -148,6 +157,25 @@
         font-size: 1rem;
         line-height: 1.6;
     }
+    
+    .about__cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .about__card {
+        padding: 1.2rem;
+    }
+    
+    .about__card h5 {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .about__card small {
+        font-size: 0.75rem;
+    }
 }
 
 /* =================== MEDIA QUERIES (EXTRA SMALL DEVICES)======================*/
@@ -161,4 +189,58 @@
         font-size: 0.95rem;
         margin: 0 0 1.8rem;
     }
+    
+    .about__cards {
+        gap: 0.8rem;
+        margin-top: 1.2rem;
+    }
+    
+    .about__card {
+        padding: 1rem;
+    }
+    
+    .about__icon {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .about__card h5 {
+        font-size: 0.85rem;
+    }
+    
+    .about__card small {
+        font-size: 0.7rem;
+    }
+}
+
+/* =================== LIGHT MODE STYLES ======================*/
+
+[data-theme="light"] .about__cards {
+    background: var(--color-white);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .about__card {
+    background: var(--color-white);
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .about__card:hover {
+    background: var(--color-white);
+    border-color: var(--color-primary);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .about__card h5 {
+    color: var(--color-text);
+}
+
+[data-theme="light"] .about__card small {
+    color: var(--color-text-variant);
+}
+
+[data-theme="light"] .about__content p {
+    color: var(--color-text);
 }

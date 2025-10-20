@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import Nav from '../components/nav/Nav';
 import Footer from '../components/footer/Footer';
+import ParticleBackground from '../components/ParticleBackground';
 
 const humanize = (slug = "") =>
   slug.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
@@ -12,6 +13,7 @@ const SkillPage = () => {
 
   return (
     <>
+      <ParticleBackground />
       <Nav />
       <main style={{ 
         padding: "2rem", 
